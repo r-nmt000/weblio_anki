@@ -13,7 +13,7 @@ javascript:(function(){
         $(this).find('.tngMainTSRH, .tngMainTSRHJ').each(function(){
           line += '"'+$(this).text().replace(/\"/g,'\"\"')+'";';
           line += pronunciation+meaning;});
-        $(this).find('.tngMainTSRFL, .tngMainTSRFJ').each(function(){
+        $(this).find('.tngMainTSRFL').each(function(){
           line += '"'+$(this).text().replace(/\"/g,'\"\"')+'";';});
       }else if(cn == 'tngMainTHT'){
         pronunciation= '"'+$(this).text().replace(/\"/g,'\"\"')+'";';
